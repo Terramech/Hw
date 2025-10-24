@@ -15,17 +15,21 @@ using namespace std;
 // # 4
 
 
-// int main() {
-//     int f0 = 0, f1 = 1, F, input;
-//     cin >> input;
-//     for (int i = 1; i < input; i++) {
-//         F = f0 + f1;
-//         f0 = f1;
-//         f1 = F;
-//     }
-//     cout << F << endl;
-//     return 0;
-// }
+int main() {
+    int f0 = 0, f1 = 1, F, input;
+    cin >> input;
+    if (input < 0 || input > 45){
+        cout << "число должно быть в пределе от 0 до 45";
+        return 0;
+    }
+    for (int i = 1; i < input; i++) {
+        F = f0 + f1;
+        f0 = f1;
+        f1 = F;
+    }
+    cout << F << endl;
+    return 0;
+}
 
 
 // # 3
